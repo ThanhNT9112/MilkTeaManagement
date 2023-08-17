@@ -1,5 +1,13 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
+using System;
 using System.Collections.Generic;
+using System.Data;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace MilkTea.Models
 {
@@ -9,7 +17,6 @@ namespace MilkTea.Models
         {
             Managers = new HashSet<Manager>();
         }
-
         public int AccountId { get; set; }
         public string? Username { get; set; }
         public string? Password { get; set; }
