@@ -2343,19 +2343,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\milkteaproject\\MilkTeaManagement\\MilkTea\\MilkTea\\MilkTea.csproj",
+      "projectUniqueName": "D:\\Ky 5_Summer 2023\\PRN211 Bloc5\\PJ2\\4\\MilkTea\\MilkTea\\MilkTea.csproj",
       "projectName": "MilkTea",
-      "projectPath": "C:\\Users\\ADMIN\\Desktop\\milkteaproject\\MilkTeaManagement\\MilkTea\\MilkTea\\MilkTea.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\Desktop\\milkteaproject\\MilkTeaManagement\\MilkTea\\MilkTea\\obj\\",
+      "projectPath": "D:\\Ky 5_Summer 2023\\PRN211 Bloc5\\PJ2\\4\\MilkTea\\MilkTea\\MilkTea.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Ky 5_Summer 2023\\PRN211 Bloc5\\PJ2\\4\\MilkTea\\MilkTea\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2415,7 +2415,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
