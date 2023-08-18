@@ -57,3 +57,6 @@ C:\Users\ADMIN\Desktop\milkteaproject\MilkTeaManagement\MilkTea\MilkTea\obj\Debu
 C:\Users\ADMIN\Desktop\milkteaproject\MilkTeaManagement\MilkTea\MilkTea\obj\Debug\net6.0-windows\MilkTea.EmployeeMenu.resources
 C:\Users\ADMIN\Desktop\milkteaproject\MilkTeaManagement\MilkTea\MilkTea\obj\Debug\net6.0-windows\MilkTea.Login.resources
 C:\Users\ADMIN\Desktop\milkteaproject\MilkTeaManagement\MilkTea\MilkTea\bin\Debug\net6.0-windows\appsettings.json
+C:\Users\ADMIN\Desktop\milkteaproject\MilkTeaManagement\MilkTea\MilkTea\obj\Debug\net6.0-windows\MilkTea.AdminMainMenu.resources
+C:\Users\ADMIN\Desktop\milkteaproject\MilkTeaManagement\MilkTea\MilkTea\obj\Debug\net6.0-windows\MilkTea.AdminStatic.resources
+C:\Users\ADMIN\Desktop\milkteaproject\MilkTeaManagement\MilkTea\MilkTea\obj\Debug\net6.0-windows\MilkTea.Properties.Resources.resources
