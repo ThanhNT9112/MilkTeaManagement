@@ -2343,19 +2343,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\tung2\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\milkteaproject\\MilkTeaManagement\\MilkTea\\MilkTea\\MilkTea.csproj",
+      "projectUniqueName": "C:\\Users\\tung2\\OneDrive\\Máy tính\\MilkTea\\MilkTeaManagement\\MilkTea\\MilkTea\\MilkTea.csproj",
       "projectName": "MilkTea",
-      "projectPath": "C:\\Users\\ADMIN\\Desktop\\milkteaproject\\MilkTeaManagement\\MilkTea\\MilkTea\\MilkTea.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\Desktop\\milkteaproject\\MilkTeaManagement\\MilkTea\\MilkTea\\obj\\",
+      "projectPath": "C:\\Users\\tung2\\OneDrive\\Máy tính\\MilkTea\\MilkTeaManagement\\MilkTea\\MilkTea\\MilkTea.csproj",
+      "packagesPath": "C:\\Users\\tung2\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tung2\\OneDrive\\Máy tính\\MilkTea\\MilkTeaManagement\\MilkTea\\MilkTea\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tung2\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
