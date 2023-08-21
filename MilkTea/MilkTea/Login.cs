@@ -29,40 +29,40 @@ namespace MilkTea
             if (!regex.IsMatch(user) || !regex.IsMatch(pass))
             {
                 return false;
-			}
-			return true;
-		}
+            }
+            return true;
+        }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-			string user = txtUsername.Text;
-			string pass = txtPassword.Text;
-			using (var context = new MilkteaDBContext())
-			{
-				Account ac = context.Accounts.Where(x => x.Username == user && x.Password == pass).FirstOrDefault();
-				if (ac == null)
-				{
-					MessageBox.Show("Dang nhap that bai");
-				}
-				else
-				{
-					
-						if (ac.RoleId == 1)
-						{
-							AdminMenu form = new AdminMenu();
-							form.Show();
-							this.Hide();
-						}
-						else
-						{
-							EmployeeMenu form = new EmployeeMenu();
-							form.Show();
-							this.Hide();
-						}
-				
-				}
+            string user = txtUsername.Text;
+            string pass = txtPassword.Text;
+            using (var context = new MilkteaDBContext())
+            {
+                Account ac = context.Accounts.Where(x => x.Username == user && x.Password == pass).FirstOrDefault();
+                if (ac == null)
+                {
+                    MessageBox.Show("Dang nhap that bai");
+                }
+                else
+                {
 
-			}
-		}
+                    if (ac.RoleId == 1)
+                    {
+                        AdminMenu form = new AdminMenu();
+                        form.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        EmployeeMenu form = new EmployeeMenu();
+                        form.Show();
+                        this.Hide();
+                    }
+
+                }
+
+            }
+        }
     }
 }

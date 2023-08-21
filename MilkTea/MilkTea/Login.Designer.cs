@@ -41,19 +41,19 @@
             label1.AutoSize = true;
             label1.BackColor = SystemColors.Control;
             label1.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.Highlight;
-            label1.Location = new Point(475, 126);
+            label1.ForeColor = Color.DodgerBlue;
+            label1.Location = new Point(447, 122);
             label1.Name = "label1";
-            label1.Size = new Size(248, 46);
+            label1.Size = new Size(301, 46);
             label1.TabIndex = 0;
-            label1.Text = "Welcome User";
+            label1.Text = "Welcome MilkTea";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.Highlight;
-            label2.Location = new Point(374, 306);
+            label2.ForeColor = SystemColors.ActiveCaptionText;
+            label2.Location = new Point(374, 234);
             label2.Name = "label2";
             label2.Size = new Size(133, 31);
             label2.TabIndex = 1;
@@ -63,8 +63,8 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.Highlight;
-            label3.Location = new Point(374, 420);
+            label3.ForeColor = SystemColors.ActiveCaptionText;
+            label3.Location = new Point(374, 340);
             label3.Name = "label3";
             label3.Size = new Size(126, 31);
             label3.TabIndex = 2;
@@ -73,16 +73,16 @@
             // txtUsername
             // 
             txtUsername.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            txtUsername.Location = new Point(374, 345);
+            txtUsername.Location = new Point(374, 280);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(415, 43);
             txtUsername.TabIndex = 3;
             // 
             // txtPassword
             // 
-            txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            txtPassword.Anchor = AnchorStyles.None;
             txtPassword.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPassword.Location = new Point(374, 465);
+            txtPassword.Location = new Point(374, 385);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(415, 38);
             txtPassword.TabIndex = 4;
@@ -90,18 +90,18 @@
             // 
             // btnLogin
             // 
-            btnLogin.BackColor = SystemColors.Highlight;
+            btnLogin.BackColor = SystemColors.Info;
             btnLogin.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            btnLogin.ForeColor = SystemColors.Control;
-            btnLogin.Location = new Point(475, 540);
+            btnLogin.ForeColor = SystemColors.Desktop;
+            btnLogin.Location = new Point(468, 447);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(229, 41);
+            btnLogin.Size = new Size(229, 51);
             btnLogin.TabIndex = 5;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
             // 
-            // Form1
+            // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -112,7 +112,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Form1";
+            Name = "Login";
             Text = "Login";
             ResumeLayout(false);
             PerformLayout();
