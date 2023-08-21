@@ -171,7 +171,6 @@ D:\MilkTeaManagement\MilkTea\MilkTea\bin\Debug\net6.0-windows\runtimes\win\lib\n
 D:\MilkTeaManagement\MilkTea\MilkTea\obj\Debug\net6.0-windows\MilkTea.csproj.AssemblyReference.cache
 D:\MilkTeaManagement\MilkTea\MilkTea\obj\Debug\net6.0-windows\MilkTeaManagement.AdminHome.resources
 D:\MilkTeaManagement\MilkTea\MilkTea\obj\Debug\net6.0-windows\MilkTea.AdminMenu.resources
-D:\MilkTeaManagement\MilkTea\MilkTea\obj\Debug\net6.0-windows\MilkTea.AdminStatic.resources
 D:\MilkTeaManagement\MilkTea\MilkTea\obj\Debug\net6.0-windows\MilkTea.EmployeeMenu.resources
 D:\MilkTeaManagement\MilkTea\MilkTea\obj\Debug\net6.0-windows\MilkTea.Login.resources
 D:\MilkTeaManagement\MilkTea\MilkTea\obj\Debug\net6.0-windows\MilkTea.Properties.Resources.resources
@@ -195,3 +194,6 @@ D:\MilkTeaManagement\MilkTea\MilkTea\bin\Debug\net6.0-windows\ExcelNumberFormat.
 D:\MilkTeaManagement\MilkTea\MilkTea\bin\Debug\net6.0-windows\Irony.dll
 D:\MilkTeaManagement\MilkTea\MilkTea\bin\Debug\net6.0-windows\SixLabors.Fonts.dll
 D:\MilkTeaManagement\MilkTea\MilkTea\bin\Debug\net6.0-windows\XLParser.dll
+D:\MilkTeaManagement\MilkTea\MilkTea\obj\Debug\net6.0-windows\MilkTea.AdminBranch.resources
+D:\MilkTeaManagement\MilkTea\MilkTea\obj\Debug\net6.0-windows\MilkTea.AdminProfile.resources
+D:\MilkTeaManagement\MilkTea\MilkTea\obj\Debug\net6.0-windows\MilkTea.AdminRevenue.resources
