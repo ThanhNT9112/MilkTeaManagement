@@ -21,6 +21,7 @@ namespace MilkTea.Models
         public int? ManagerId { get; set; }
 
         public virtual Category? Category { get; set; }
+        public virtual Account? Manager { get; set; }
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
         public virtual ICollection<ProIng> ProIngs { get; set; }
     }

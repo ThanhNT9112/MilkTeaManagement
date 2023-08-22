@@ -7,16 +7,19 @@
     <Compile Update="AdminRevenue.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="EmployeeMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="AdminMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Login.cs">
+    <Compile Update="ForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ShoppingCart.cs">
+    <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UserControl1.cs">

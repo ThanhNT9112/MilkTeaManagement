@@ -21,7 +21,6 @@ namespace MilkTea.Models
         public virtual DbSet<Branch> Branches { get; set; } = null!;
         public virtual DbSet<Category> Categories { get; set; } = null!;
         public virtual DbSet<Ingredient> Ingredients { get; set; } = null!;
-        public virtual DbSet<Manager> Managers { get; set; } = null!;
         public virtual DbSet<Order> Orders { get; set; } = null!;
         public virtual DbSet<OrderDetail> OrderDetails { get; set; } = null!;
         public virtual DbSet<ProIng> ProIngs { get; set; } = null!;
@@ -30,10 +29,13 @@ namespace MilkTea.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            IConfigurationBuilder builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
-                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-            IConfigurationRoot configuration = builder.Build();
-            optionsBuilder.UseSqlServer(configuration.GetConnectionString("MilkTeaDB"));
+            if (!optionsBuilder.IsConfigured)
+            {
+				IConfigurationBuilder builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
+				.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+				IConfigurationRoot configuration = builder.Build();
+				optionsBuilder.UseSqlServer(configuration.GetConnectionString("MilkTeaDB"));
+			}
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -44,11 +46,23 @@ namespace MilkTea.Models
 
                 entity.Property(e => e.AccountId).HasColumnName("AccountID");
 
+                entity.Property(e => e.Address).HasMaxLength(50);
+
                 entity.Property(e => e.BranchId).HasColumnName("BranchID");
+
+                entity.Property(e => e.Dob).HasColumnType("datetime");
+
+                entity.Property(e => e.Email).HasMaxLength(50);
+
+                entity.Property(e => e.Image).HasMaxLength(50);
+
+                entity.Property(e => e.Name).HasMaxLength(50);
 
                 entity.Property(e => e.Password)
                     .HasMaxLength(50)
                     .IsUnicode(false);
+
+                entity.Property(e => e.Phone).HasMaxLength(50);
 
                 entity.Property(e => e.RoleId).HasColumnName("RoleID");
 
@@ -102,32 +116,6 @@ namespace MilkTea.Models
                 entity.Property(e => e.Image).HasMaxLength(100);
 
                 entity.Property(e => e.IngredientName).HasMaxLength(50);
-            });
-
-            modelBuilder.Entity<Manager>(entity =>
-            {
-                entity.ToTable("Manager");
-
-                entity.Property(e => e.ManagerId).HasColumnName("ManagerID");
-
-                entity.Property(e => e.AccountId).HasColumnName("AccountID");
-
-                entity.Property(e => e.Address).HasMaxLength(50);
-
-                entity.Property(e => e.Dob).HasColumnType("datetime");
-
-                entity.Property(e => e.Email).HasMaxLength(50);
-
-                entity.Property(e => e.Name).HasMaxLength(50);
-
-                entity.Property(e => e.Phone)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.HasOne(d => d.Account)
-                    .WithMany(p => p.Managers)
-                    .HasForeignKey(d => d.AccountId)
-                    .HasConstraintName("FK_Manager_Account");
             });
 
             modelBuilder.Entity<Order>(entity =>
@@ -208,6 +196,11 @@ namespace MilkTea.Models
                     .WithMany(p => p.Products)
                     .HasForeignKey(d => d.CategoryId)
                     .HasConstraintName("FK_Product_Category");
+
+                entity.HasOne(d => d.Manager)
+                    .WithMany(p => p.Products)
+                    .HasForeignKey(d => d.ManagerId)
+                    .HasConstraintName("FK_Product_Account");
             });
 
             modelBuilder.Entity<Role>(entity =>

@@ -8,33 +8,33 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MilkTea
 {
-    public partial class Login : Form
-    {
-        public Login()
-        {
-            InitializeComponent();
-        }
-        Account accountList = new Account();
-        Role roleList = new Role();
-        public bool validAccount()
-        {
-            string user = txtUsername.Text.Trim();
-            string pass = txtPassword.Text.Trim();
+	public partial class Login : Form
+	{
+		public Login()
+		{
+			InitializeComponent();
+		}
+		Account accountList = new Account();
+		Role roleList = new Role();
+		public bool validAccount()
+		{
+			string user = txtUsername.Text.Trim();
+			string pass = txtPassword.Text.Trim();
 
-            if (user == "" || pass == "")
-            {
-                return false;
-            }
-            Regex regex = new Regex(@"^([a-zA-Z0-9_\.]+)$");
-            if (!regex.IsMatch(user) || !regex.IsMatch(pass))
-            {
-                return false;
+			if (user == "" || pass == "")
+			{
+				return false;
+			}
+			Regex regex = new Regex(@"^([a-zA-Z0-9_\.]+)$");
+			if (!regex.IsMatch(user) || !regex.IsMatch(pass))
+			{
+				return false;
 			}
 			return true;
 		}
 
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
+		private void btnLogin_Click(object sender, EventArgs e)
+		{
 			string user = txtUsername.Text;
 			string pass = txtPassword.Text;
 			using (var context = new MilkteaDBContext())
@@ -46,23 +46,25 @@ namespace MilkTea
 				}
 				else
 				{
-					
-						if (ac.RoleId == 1)
-						{
-							AdminMenu form = new AdminMenu();
-							form.Show();
-							this.Hide();
-						}
-						else
-						{
-							EmployeeMenu form = new EmployeeMenu();
-							form.Show();
-							this.Hide();
-						}
-				
+
+					if (ac.RoleId == 1)
+					{
+						AdminMenu form = new AdminMenu();
+						form.Show();
+						this.Hide();
+					}
+					else
+					{
+						EmployeeMenu form = new EmployeeMenu();
+						form.Show();
+						this.Hide();
+					}
+
 				}
 
 			}
 		}
-    }
+
+		
+	}
 }
